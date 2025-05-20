@@ -1,1 +1,0 @@
-docker run --name some-postgres -e POSTGRES_PASSWORD=$(op read "op://Developer/local-postgres/password") -d postgres

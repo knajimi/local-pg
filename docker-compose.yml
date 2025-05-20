@@ -7,10 +7,11 @@ services:
       - "5432:5432"
     environment:
       POSTGRES_USER: pcmacadmin
-      POSTGRES_PASSWORD: pDwAdaMRk3Bc7zt4Zt4hHoWJvkm9nCLXAwzp6Eb-fakepwd
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_DB: postgres
+      PGDATA: /var/lib/postgresql/data/pgdata/
     volumes:
-      - /Users/kevin/postgres-data:/var/lib/postgresql/data
+      - ~/postgres-data:/var/lib/postgresql/data
     restart: unless-stopped
 
 volumes:
