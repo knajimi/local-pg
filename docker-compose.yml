@@ -1,0 +1,17 @@
+services:
+  postgres:
+    container_name: local-pg
+    image: postgres
+    hostname: localhost
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: pcmacadmin
+      POSTGRES_PASSWORD: pDwAdaMRk3Bc7zt4Zt4hHoWJvkm9nCLXAwzp6Eb-fakepwd
+      POSTGRES_DB: postgres
+    volumes:
+      - /Users/kevin/postgres-data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  postgres-data:
