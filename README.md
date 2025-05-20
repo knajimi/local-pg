@@ -1,8 +1,8 @@
-# Local Postgres
+# Local-PG
 
-A really simple example to get Postgres running locally using Docker. 
+A really simple example to get Postgres running locally using Docker.
 
-First find your own way to securely set `POSTGRES_PASSWORD` in `create-pg-server.sh`.
+First find your own way to securely set `POSTGRES_PASSWORD` in `create-pg-server.sh`.  The repo demonstrates using the 1Password CLI. 
 
 Then run `create-pg-server.sh`
 
